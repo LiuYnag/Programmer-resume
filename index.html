@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>liuyang</title>
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/htmleaf-demo.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.eeyellow.Timeline.css" />
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+    <!--[if IE]>
+    <script src="http://libs.useso.com/js/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body onload="init()">
+    <div class="content" id="content">
+        <div class="model click_before" order="0">
+            <h3>基本信息</h3>
+            <div class="article" style="padding-top:30px;">
+                <table class="basicInfo">
+                    <tr>
+                        <th>姓名：</th><td>刘洋</td>
+                        <th>性别：</th><td>男</td>
+                    </tr>
+                    <tr>
+                        <th>出生日期：</th><td>1989-**-12</td>
+                        <th>年龄：</th><td>28</td>
+                    </tr>
+                    <tr>
+                        <th>居住地：</th><td>杭州市</td>
+                        <th>婚否：</th><td>未婚</td>
+                    </tr>
+                    <tr>
+                        <th>手机：</th><td>180********</td>
+                        <th>E-mail：</th><td>syt********@qq.com</td>
+                    </tr>
+                    <tr>
+                        <th>最高学历：</th><td>本科</td>
+                        <th>期望工作地：</th><td>杭州市、上海市</td>
+                    </tr>
+                </table>
+            </div>
+            <div class = "reback"></div>
+        </div>
+        <div class="model click_before" order="1">
+            <h3>教育经历</h3>
+            <div class="article" style="padding-top:30px;">
+                <ul class="educate">
+                    <li><label>2009年09月01日 - 2013年07月01日</label></li>
+                    <li><label>毕业院校：</label><span>西安电子科技大学</span></li>
+                    <li><label>学历：</label><span>一本</span></li>
+                    <li><label>专业：</label><span>计算机科学与技术</span></li>
+                    <li>
+                        <label>专业描述：</label>
+                        <span>系统地掌握计算机科学与技术(包括计算机硬件、软件与应用的基本理论、基本知识和基本技能与方法) 主要课程：电路原理、模拟电子技术、数字逻辑、计算机原理、微型计算机技术、计算机系统结构、计算机网络、C语言、数据结构、操作系统、编译原理、信号处理原理、通信原理概论。</span>
+                    </li>
+                </ul>
+            </div>
+            <div class = "reback"></div>
+        </div>
+        <div class="model click_before" order="2">
+            <h3>工作经历</h3>
+            <div class="article" style="padding-top:30px;">
+                <ul class="educate">
+                    <li><label>2014年04月 - 至今</label></li>
+                    <li><label>公司名称：</label><span>大连信雅达软件有限公司</span></li>
+                    <li><label>职务：</label><span>JavaWeb开发</span></li>
+                    <li>
+                        <label>职务描述：</label>
+                        <span>
+                                从事web项目开发，偏向于前端开发，根据分配的任务，完成单独模块的开发。在入职公司前期，
+                            工作内容主要为公司承接的各大银行的平台管理项目，项目主要使用目前流行的开源struts2框架，
+                            工作内容为整个项目的前端页面代码开发及所属自己模块的后台服务开发。就职中期外派在工商银行上海研发中心工作，
+                            工作内容为工行内部一套项目审批流程的web项目开发，主要工作内容为web前端开发及调用数据库的相关配置文件的配置工作。
+                            目前外派于杭州中信银行，主要为前端代码开发，及各个功能查询sql语句的效率优化工作。
+                        </span>
+                    </li>
+                </ul>
+            </div>
+            <div class = "reback"></div>
+        </div>
+        <div id="evaluate" class="model click_before" order="3">
+            <h3>自我评价</h3>
+            <div class="article" style="padding-top:30px;">
+                <ul class="evaluate">
+                    <li>
+                        <h3>技能图</h3>
+                        <div id = "war"></div>
+                    </li>
+                    <li>
+                        <h3>个人评价</h3>
+                        <p>个人性格属于沉稳冷静，能吃苦耐劳，勤奋认真，做事热情积极，较强的责任心，具备良好的团队协作能力。</p>
+                    </li>
+                </ul>
+            </div>
+            <div class = "reback"></div>
+        </div>
+        <div class="model click_before" order="4">
+            <h3>项目经历</h3>
+            <div class="article" style="padding-top:30px;">
+                <div class="VivaTimeline">
+                    <dl>
+                        <dt>2014</dt>
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">6月</div>
+                            <div class="events">
+                                <div class="events-header">“金穗”优生活移动商城</div>
+                                <div class="events-body">
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目职责：
+                                            项目为温州农行在其微信公众号推出的微信平台端移动商城，
+                                            主要面向其行内持有农行借记卡并积分剩余的员工。
+                                            主要功能为商品的预览、详情介绍、商品购买、订单管理等功能。
+                                            项目数据库使用sybase数据库，服务端使用spring框架，页面为FreeMarker模板引擎
+                                        </div>。
+                                    </div>
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目描述：
+                                            根据行内提供的psd原型，编写前台页面，完成与其他同事编写的服务端的数据交互。
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="events-footer"></div>
+                            </div>
+                        </dd>
+                        <dd class="pos-right clearfix">
+                            <div class="circ"></div>
+                            <div class="time">9月</div>
+                            <div class="events">
+                                <div class="events-header">“E商管家”平台管理系统</div>
+                                <div class="events-body">
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目职责：
+                                            所有的前端web页面开发，前端框架采用easyui框架同时借鉴农行原有的页面风格实现页面的UI设计。
+                                        </div>
+                                    </div>
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目描述：
+                                            针对货款归集、小型教育机构、物业公司等的收款目前遇到几个问题：
+                                            （一）、不能支持他行收款 ,现有带收款功能的产品（现金管理系统、POS机等）存在与企业对接门槛高、功能单一等缺陷，难以满足企业的全方位自己归集需求。
+                                            （二）、农行现有移动端的支付方式客户体验感不佳，即使开发新支付接口也无平台挂载。客户需要一个开放的、操作更直观简便的免维护收款平台
+                                            商户生成收款账单——提交E商管家支付平台
+                                            公众用户登录E商管家支付平台——查找到自己的付款账单——使用我行支付系统支付账单。
+                                            系统通过个人网银、企业网银通过B2C、B2B、C2C支付接口进行付款，完成支付操作，其中B2C支持跨行交易（银联或汇付天下）。同时支持我行个人网银、企业网银客户证书支付。
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="events-footer"></div>
+                            </div>
+                        </dd>
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">12月</div>
+                            <div class="events">
+                                <div class="events-header">福州农行产品库</div>
+                                <div class="events-body">
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目职责：
+                                            几个典型页面的模板的开发制作；整个项目中监控服务数据对接模块的服务端功能开发、
+                                            各项类型的产品查找模块及项目内产生的日志管理模块的后台java代码开发。
+                                        </div>
+                                    </div>
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目描述：
+                                            福州农行推出的对其行内相关产品进行管理的项目。该项目为struts2框架
+                                            的WebService项目，整体结构分为三部分服务端/总控端/客户端，服务端为对数据进行处理及进行数据库连接及读写相关操作，
+                                            总控端为农行为后续相关项目所考虑，其他相关项目可由该总控端进行控制进行对该项系统的相关操作，客户端为向客户展示相关信息，
+                                            并由客户进行相关需求操作。项目主体功能为客户对产品的增、删、改、查等操作。
+                                            行内管理人员可通过选择产品的模板添加载属性填写属性信息后新增产品，
+                                            其他用户可通过模板属性查找或基本信息模糊查找搜索所需的产品进行查看详情或收藏等操作。
+                                            项目服务端采用struts2框架，数据库为sybase数据库，前端采用了部分的bootstrap功能。
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="events-footer"></div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>2015</dt>
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">3月</div>
+                            <div class="events">
+                                <div class="events-header">上海农行产品战略地图</div>
+                                <div class="events-body">
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目职责：
+                                            几个典型页面的模板的开发制作；整个项目中监控服务数据对接模块的服务端功能开发、
+                                            各项类型的产品查找模块及项目内产生的日志管理模块的后台java代码开发。
+                                        </div>
+                                    </div>
+                                    <div  class="row">
+                                        <div class="events-desc">项目描述：
+                                            福州农行推出的对其行内相关产品进行管理的项目。该项目为struts2框架
+                                            的WebService项目，整体结构分为三部分服务端/总控端/客户端，服务端为对数据进行处理及进行数据库连接及读写相关操作，
+                                            总控端为农行为后续相关项目所考虑，其他相关项目可由该总控端进行控制进行对该项系统的相关操作，
+                                            客户端为向客户展示相关信息，并由客户进行相关需求操作。项目主体功能为客户对产品的增、删、改、查等操作。
+                                            行内管理人员可通过选择产品的模板添加载属性填写属性信息后新增产品，其他用户可通过模板属性查找或基本信息模糊查找搜索所需的产品进行查看详情或收藏等操作。
+                                            项目服务端采用struts2框架，数据库为sybase数据库，前端采用了部分的bootstrap功能。
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="events-footer"></div>
+                            </div>
+                        </dd>
+                        <dd class="pos-right clearfix">
+                            <div class="circ"></div>
+                            <div class="time">6月</div>
+                            <div class="events">
+                                <div class="events-header">商品房预售监管平台</div>
+                                <div class="events-body">
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目职责：
+                                            主要职责根据客户所提供的psd原型，编写出项目内几张典型的页面，后续页面的样式和功能调整。
+                                            完成与其他系统的数据同步功能，搭建webservice，为其他系统提供本项目交易数据，
+                                            并实时从另一平台系统同步交易流水数据，每日定时跑批调取另一平台的日终生成的流水数据文件，读取并导入本系统，并在本系统进行对账功能。
+                                        </div>
+                                    </div>
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目描述：
+                                            杭州市农行与房管局联合推出的对杭州市余杭区域内的开发商进行商品房预售的资金监管系统平台。
+                                            开发商在将要对商品房进行预售贷款时到此系统进行注册申请，
+                                            申请商品房的建筑、资金的申请、及销售权限。系统主要有开发商、房管局、银行、人民银行几个角色。
+                                            开发商在此系统上注册后提供商品房的相关信息及有关材料后可申请在余杭区内的商品房的预售权，并申请资金的代理，
+                                            房管局及人民银行对相关信息及材料的确认并审批后才可对商品房的预售。
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="events-footer"></div>
+                            </div>
+                        </dd>
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">10月</div>
+                            <div class="events">
+                                <div class="events-header">工商银行内部业务管理系统</div>
+                                <div class="events-body">
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目职责：
+                                            负责整个前台页面的开发工作以及除数据库外服务端的各项xml纪flowc配置工作，
+                                            优化项目原有的功能，拆分部分较大文件，完善项目文件结构，完成对针对浏览器IE11兼容性的升级，
+                                            清理并优化原有大量消耗内存的功能代码。
+                                        </div>
+                                    </div>
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目描述：
+                                            工行内部一套审批流程系统。主要功能为各部门、分行、总行在系统内创建产品或项目申请表单，系统根据其所在机构部门，
+                                            自动逐级向上级领导提交审批，最终将申请结果回复到申请人或机构中。 整个项目采用工行内部的一套CTP框架，
+                                            框架特色为服务端业务逻辑在数据库层以存储过程实现，
+                                            页面通过一套CTP自带的API通过服务端的xml及flowc配置完成页面之间的跳转及与数据库的数据交互功能，
+                                            目前在运行版本主要为CTP3到CTP53个版本。
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="events-footer"></div>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>2016</dt>
+                        <dd class="pos-left clearfix">
+                            <div class="circ"></div>
+                            <div class="time">12月</div>
+                            <div class="events">
+                                <div class="events-header">杭州中信银行互联网投融资平台资金监管系统</div>
+                                <div class="events-body">
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目职责：
+                                            项目系统内各项查询sql的效率优化工作；根据数据库字段的修改完成对服务端及页面的修改工作。
+                                        </div>
+                                    </div>
+                                    <div  class="row">
+                                        <div class="events-desc">
+                                            项目描述：
+                                            中信银行的一套网贷资金监管业务系统，系统主要角色为银行、投融资平台及第三方支付机构。
+                                            主要功能为银行与平台和第三方之间的对账和虚拟账户的几张工作。 该项目一期目标已经完成，
+                                            即业务资金监管的批量文件传输，并根据相应的文件进行业务处理；对账系统；账户和项目系统等功能。
+                                            目前正在进行二期工作，主要内容为平台间的双向信息实时交互，扩充数据采集结构，对账文件自动下载；对帐户加强权限管理，
+                                            确保交易真实性；核心业务同步处理；对一期项目代码优化工作。 项目采购上海棠棣公司的一套架构（一期为棠棣公司开发）系统，数据库为DB2数据库。
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="events-footer"></div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class = "reback"></div>
+        </div>
+    </div>
+    <p class="remark">请按左右键或点击查看</p>
+</body>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="js/d3.min.js"></script>
+<script type="text/javascript" src="js/warLevel.js"></script>
+<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.eeyellow.Timeline.js"></script>
+<script>
+    let state = 5;//用于标识当前选中的元素，值为5时为初始化状态，即全部元素没有被选中
+    let config=[//配置化元素的旋转角度，左偏移量，及小元素时显示的封面图片
+        {rotate:-20,left:100,backgroundImage:"url('img/basicinfo.jpg')"},
+        {rotate:-10,left:200,backgroundImage:"url('img/education.jpg')"},
+        {rotate:0,left:300,backgroundImage:"url('img/work.jpg')"},
+        {rotate:10,left:400,backgroundImage:"url('img/evaluate.jpg')"},
+        {rotate:20,left:500,backgroundImage:"url('img/his.png')"}
+    ];
+    let objArray = new Array();//记录5个DOM节点
+    function init(){
+        let target = document.getElementById("content");
+        let childNode = target.childNodes;
+        for(let i=0;i<childNode.length;i++){
+            if(childNode[i].nodeType==1){
+                objArray.push(childNode[i]);
+                if(childNode[i].getAttribute('class').indexOf('model')>=0){
+                    let order = childNode[i].getAttribute("order");//获取当前为第几个元素
+                    childNode[i].style.transform="rotate("+config[order].rotate+"deg)";//将当前元素旋转为指定角度
+                    childNode[i].style.backgroundImage=config[order].backgroundImage;
+                    childNode[i].style.left=config[order].left+'px';
+                    childNode[i].onmouseover=function(){//小元素时鼠标滑过略微变大效果
+                            let ele = this.getAttribute('order');
+                            this.style.transform="rotate("+config[ele].rotate+"deg) scale(1.1)";
+                    };
+                    childNode[i].onmouseout=function(){
+                            let ele = this.getAttribute('order');
+                            this.style.transform="rotate("+config[ele].rotate+"deg) scale(1)";
+                    };
+                    childNode[i].onclick=function(){//点击元素查看详细信息效果
+                        state = this.getAttribute("order");
+                        changeStat(this,true);
+                    }
+                    childNode[i].getElementsByClassName("reback")[0].addEventListener("click",function(e){//元素放大后点击此按钮返回变小效果
+                        e.stopPropagation();//阻止元素事件冒泡
+                        changeStat(this.parentNode,false);
+                    })
+                }
+            }
+        }
+        //初始化能力图
+        let polygon=new creatLevel(600,450,'war');
+        polygon.init();
+        //初始化时间轴插件
+        $('.VivaTimeline').vivaTimeline({
+            carousel: false,
+            carouselTime: 3000
+        });
+    }
+    //捕获左右键按钮，切换查看各项页
+    document.onkeydown=function(event){
+        let e = event || window.event || arguments.callee.caller.arguments[0];
+        if(state!=5){
+            changeStat(objArray[state],false);
+        }
+        if(e&&e.keyCode == 37){//左
+            state==0?state=5:state--;
+            changeStat(objArray[state],true);
+        }
+        if(e&&e.keyCode == 39){//右
+            state==5?state=0:state++;
+            changeStat(objArray[state],true);
+        }
+    };
+    //单页切换状态，flag为true时即从小到大，为false时相反，target为当前DOM节点
+    function changeStat(target,flag){
+        if(flag){
+            target.className = "model click_after";
+            target.style.backgroundImage = "";//将小屏的背景图片去掉
+            target.getElementsByClassName("article")[0].style.display="block";//显示当前页的主体内容
+            target.getElementsByClassName("article")[0].style.height=target.clientHeight-100+"px";//设置当前页主题内容的容器的高度
+            target.getElementsByClassName("reback")[0].style.display="block";//将下部缩小按钮显示出来
+        }else{
+            target.className = "model click_before";
+            target.style.backgroundImage = config[state].backgroundImage;
+            target.getElementsByClassName("article")[0].style.display="none";
+            target.getElementsByClassName("reback")[0].style.display="none";
+
+        }
+    }
+</script>
+</html>
